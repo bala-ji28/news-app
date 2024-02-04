@@ -11,7 +11,7 @@ dateFormat(date) {
 
 urlLauncher(String url) async {
   if (await canLaunchUrl(Uri.parse(url))) {
-    launchUrl(Uri.parse(url));
+    launchUrl(Uri.parse(url), mode: LaunchMode.externalApplication);
   } else {
     throw "Could not launch $url";
   }

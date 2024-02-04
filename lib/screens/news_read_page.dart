@@ -101,6 +101,9 @@ class _NewsReadPageState extends State<NewsReadPage> {
                 style: const TextStyle(
                     fontSize: 15.0, fontWeight: FontWeight.w500),
               ),
+              SizedBox(
+                height: size.height * 0.02,
+              ),
               TextButton(
                 child: const Text(
                   "Read More",
@@ -110,11 +113,6 @@ class _NewsReadPageState extends State<NewsReadPage> {
                   urlLauncher(widget.news.url);
                 },
               ),
-              SizedBox(
-                height: size.height * 0.02,
-              ),
-              IconButton(
-                  onPressed: () {}, icon: const Icon(Icons.bookmark_outline))
             ],
           ),
         ),
